@@ -59,12 +59,12 @@
             align-items: center;
         }
         #loader .logo {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--nc-text-light);
             animation: fadeInOutLogo 2.5s ease-in-out forwards;
             position: relative;
             z-index: 2;
+        }
+        #loader .logo img {
+            height: 2.5rem;
         }
         @keyframes fadeInOutLogo {
             0% { opacity: 0; transform: scale(0.8); }
@@ -134,9 +134,11 @@
             box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
         }
         .navbar-brand {
-            font-weight: 700;
-            font-size: 1.8rem;
-            color: var(--nc-text-light) !important;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        .navbar-brand img {
+            height: 2.5rem;
         }
         .btn-custom {
             background-color: var(--nc-light-beige);
@@ -542,7 +544,7 @@
     <!-- Loader Animation -->
     <div id="loader">
         <div class="logo-container">
-            <div class="logo">NOVACASA</div>
+            <div class="logo"><img src="assets/images/novacasa_logo.jpg" alt="NovaCasa Logo"></div>
             <div class="sparks">
                 <span class="spark"></span><span class="spark"></span>
                 <span class="spark"></span><span class="spark"></span>
@@ -558,7 +560,7 @@
         <header class="fixed-top">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="#">NOVACASA</a>
+                    <a class="navbar-brand" href="#"><img src="assets/images/novacasa_logo.jpg" alt="NovaCasa Logo"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="bi bi-list hamburger-icon"></i>
                         <i class="bi bi-x-lg close-icon d-none"></i>
